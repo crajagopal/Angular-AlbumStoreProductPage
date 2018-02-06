@@ -1,4 +1,5 @@
-{
+[
+  {
   "id": 1,
   "artist": "The Prependers",
   "album": {
@@ -16,4 +17,13 @@
       {"trackNumber": 8, "trackName": "Our Gift to You", "trackLength": "3:59", "trackPrice": 0.99 }
     ]
   }
+},
+{
+  "id": 2,
+  "artist": "Regular Expressionists",
+  "album": {
+    "name": "Top, Right, Bottom, Left",
+    "releaseDate": "December 25, 2014"
+  }
 }
+]

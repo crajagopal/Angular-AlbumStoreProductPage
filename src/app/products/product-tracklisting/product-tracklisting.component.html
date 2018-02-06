@@ -1,5 +1,5 @@
 <div class="row tracklisting">
-  <ul>
+  <ul *ngIf="albumInfo?.album.tracks else noTracks">
     <li *ngFor="let track of albumInfo?.album.tracks">
       <div class="col-sm-5">
         <span class="track-number">{{track.trackNumber}}</span>
@@ -7,8 +7,9 @@
       </div>
       <div class="col-sm-3 text-right">
         <span class="track-time">{{track.trackLength}}</span>
-        <span class="price-and-buy"><button>{{track.trackPrice}}</button></span>
+        <span class="price-and-buy"><button>{{track.trackPrice|currency:usd}}</button></span>
       </div>
     </li>
   </ul>
+  <ng-template #noTracks>No tracks listed</ng-template>
 </div>
